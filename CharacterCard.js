@@ -3,9 +3,14 @@ export default class CharacterCard extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      active: false
-    };
+      active: false,
+    }
   }
+  componentDidUpdate(prevProps){
+    if(prevProps.attempt != this.props.attempt){
+    this.setState({active: false})
+    }
+   } 
 
   activate = () => {
     if (!this.state.active) {
