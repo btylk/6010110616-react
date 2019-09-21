@@ -37,6 +37,7 @@ Component {
         return(
             <div>
                 { Array.from(this.state.chars).map((c,i) => <CharacterCard value={c} key={i} activationHandler={this.activationHandler} attempt={this.state.attempt}/>)}
+                <p>HINT : The word about title of this lab</p>
             </div>
 
         );
