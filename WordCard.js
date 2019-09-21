@@ -37,7 +37,15 @@ Component {
         return(
             <div>
                 { Array.from(this.state.chars).map((c,i) => <CharacterCard value={c} key={i} activationHandler={this.activationHandler} attempt={this.state.attempt}/>)}
-                <p>HINT : The word about title of this lab</p>
+                <p>
+                <div class="dropdown">
+                <span><img src="https://cdn1.iconfinder.com/data/icons/business-487/48/2-512.png" height="142" width="142"></img></span>
+                <div class="dropdown-content">
+                <p>The word about title of this lab</p>
+                </div>
+                </div>
+                </p>
+                
             </div>
 
         );
