@@ -41,10 +41,12 @@ Component {
                 <div class="dropdown">
                 <span><img src="https://cdn1.iconfinder.com/data/icons/business-487/48/2-512.png" height="142" width="142"></img></span>
                 <div class="dropdown-content">
-                <p>The word about title of this lab</p>
+                <p>The word about this lab</p>
+                
                 </div>
                 </div>
                 </p>
+                <p-1> {this.state.completed ? 'CORRECT!!!' : ''}</p-1>
                 
             </div>
 
